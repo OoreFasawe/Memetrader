@@ -1,9 +1,8 @@
-#Stage 1: Get candidate tokens from pump fun
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
-from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
+from webdriver_manager.chrome import ChromeDriverManager
 from utils import *
 import logging
 import time
@@ -15,7 +14,7 @@ def getCoins():
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
 
-    # Setup WebDriver (make sure you have the ChromeDriver installed)
+    # Setup WebDriver, installing ChromeDrivef if not available
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
 
     # Open the page
