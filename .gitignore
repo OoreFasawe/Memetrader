@@ -1,2 +1,28 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+
+# Virtual environment
+python3-virtualenv/
+env/
 venv/
+*.venv
+.Python
+
+# Docker
 .dockerignore
+*.dockerfile
+**/Dockerfile.*
+
+# VSCode settings
+.vscode/
+*.code-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Miscellaneous
+*.swp
+*~
